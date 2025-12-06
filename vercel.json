@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm ci",
+  "framework": "nextjs",
+  "nodeVersion": "18.x",
+  "env": {
+    "POSTGRES_URL": "@postgres_url",
+    "POSTGRES_PRISMA_URL": "@postgres_prisma_url",
+    "POSTGRES_URL_NO_SSL": "@postgres_url_no_ssl",
+    "POSTGRES_URL_NON_POOLING": "@postgres_url_non_pooling",
+    "POSTGRES_USER": "@postgres_user",
+    "POSTGRES_PASSWORD": "@postgres_password",
+    "POSTGRES_HOST": "@postgres_host",
+    "POSTGRES_DATABASE": "@postgres_database"
+  },
+  "functions": {
+    "pages/api/**": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [],
+  "redirects": [],
+  "headers": []
+}
