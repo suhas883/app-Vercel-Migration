@@ -1,0 +1,19 @@
+{
+  "name": "app-vercel-migration",
+  "version": "1.0.0",
+  "description": "Frontend application migrated from Replit to Vercel",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
